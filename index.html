@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keyword" content="SIDESI UPT BLK Pasuruan">
+    <meta name="description" content="Sistem Informasi Sadar Pelatihan Terintegrasi">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <title>SIDESI</title>
+    <!--
+
+ART FACTORY
+
+https://templatemo.com/tm-537-art-factory
+
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/templatemo-art-factory.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
+    <style>
+        .whatsapp-sticky {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            z-index: 999;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: pulse-wa 2s infinite;
+        }
+
+        .whatsapp-sticky:hover {
+            background-color: #128c7e;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        .whatsapp-sticky i {
+            margin-top: 2px;
+        }
+
+        @keyframes pulse-wa {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Info Section Styles */
+        .info-section {
+            padding: 80px 0;
+            color: #fff;
+            background: linear-gradient(135deg, rgba(0, 136, 232, 1) 0%, rgba(0, 182, 198, 1) 0%, rgba(0, 136, 232, 1) 100%);
+        }
+
+        .info-section h5 {
+            color: #fff !important;
+            font-weight: 600;
+            margin-bottom: 30px;
+            font-size: 22px;
+            position: relative;
+        }
+
+        .info-section p {
+            color: #fff;
+            font-size: 15px;
+            line-height: 26px;
+        }
+
+        .info-list {
+            padding: 0;
+            list-style: none;
+            margin-top: 25px;
+        }
+
+        .info-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            font-size: 14px;
+        }
+
+        .info-list li i {
+            width: 30px;
+            margin-top: 5px;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .quick-links {
+            padding: 0;
+            list-style: none;
+        }
+
+        .quick-links li {
+            margin-bottom: 12px;
+        }
+
+        .quick-links li a {
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .quick-links li a:hover {
+            padding-left: 10px;
+            color: #fff;
+            opacity: 0.8;
+        }
+
+        .quick-links li i {
+            margin-right: 10px;
+            font-size: 12px;
+        }
+
+        .map-container {
+            border: 8px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-section hr.dashed {
+            border-top: 1px dashed rgba(255, 255, 255, 0.3);
+            margin: 25px 0;
+        }
+
+        /* Kejuruan Section Styles */
+        #kejuruan {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+
+        .kejuruan-item {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+            height: calc(100% - 30px);
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .kejuruan-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .kejuruan-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .kejuruan-content {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .kejuruan-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1e1e1e;
+            text-transform: uppercase;
+        }
+
+        .kejuruan-text {
+            font-size: 14px;
+            color: #666;
+            line-height: 24px;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .kejuruan-content .main-button {
+            align-self: flex-start;
+            padding: 10px 20px;
+            font-size: 13px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">SIDESI</a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#welcome" class="active">Beranda</a></li>
+                            <li class="scroll-to-section"><a href="#about">Tentang SIDESI</a></li>
+                            <li class="scroll-to-section"><a href="#services">Layanan</a></li>
+                            <li class="scroll-to-section"><a href="#kejuruan">Kejuruan</a></li>
+                            <li class="scroll-to-section"><a target="_blank" href="https://uptblkpasuruan.com">Web UPT
+                                    BLK Pasuruan</a>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <h1>Sistem Informasi Sadar Pelatihan Terintegrasi</h1>
+                        <p>
+                        <h3><strong>UPT Balai Latihan Kerja Pasuruan</strong></h3>
+                        </p>
+                        <a href="https://uptblkpasuruan.com/pendaftaran" class="main-button-slider">Daftar Pelatihan
+                            Sekarang!</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                        <img src="assets/images/slider-icon.png" class="rounded img-fluid d-block mx-auto"
+                            alt="First Vector Graphic">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-7 col-md-12 col-sm-12"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="right-text col-lg-5 col-md-12 col-sm-12 mobile-top-fix">
+                    <div class="left-heading">
+                        <h5>Inovasi Pelayanan Publik</h5>
+                    </div>
+                    <div class="left-text">
+
+                        <p><strong>SIDESI</strong> merupakan inovasi pelayanan publik milik <strong>UPT Balai Latihan
+                                Kerja Pasuruan</strong>, dibawah naungan Dinas Tenaga Kerja dan Transmigrasi Provinsi
+                            Jawa Timur.
+                            <br>
+                            <br>
+                            Melalui inovasi <strong>SIDESI</strong>, masyarakat diberikan kemudahan dalam mengakses
+                            informasi pelatihan dan mendaftarkan diri secara online, serta dapat mengikuti rekrutmen
+                            yang menjunjung asas transparansi melalui CBT.
+                            <br>
+                            <br>
+                            Inovasi <strong>SIDESI</strong> ini, tidak hanya berfokus pada rangkaian pendaftaran dan
+                            seleksi, mereka dapat mengakses layanan pasca-pelatihan melalui dua fitur SIDESI, yaitu
+                            Katalog Alumni, bagi alumni yang memiliki minat di bidang usaha mandiri, dan Bursa Kerja,
+                            yang diperuntukkan bagi alumni yang ingin mengembangkan karir di dunia industri.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hr">
+                        <p>Untuk informasi lebih lengkap tentang <strong>UPT Balai Latihan Kerja Pasuruan</strong>,
+                            silahkan kunjungi website utama kami di <strong> <a
+                                    href="https://uptblkpasuruan.com">www.uptblkpasuruan.com</a></strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
+
+
+    <!-- ***** Features Small Start ***** -->
+    <section class="section" id="services">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2 style="color: #fff;">Layanan SIDESI</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-01.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">Pendaftaran Institusional</h5>
+                        <p>Pelatihan Institusional yaitu Pelatihan yang diselenggarakan di workshop UPT BLK Pasuruan.
+                        </p>
+                        <a href="https://uptblkpasuruan.com/pendaftaran" class="main-button" target="_blank">Lebih
+                            Lanjut</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-02.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">Pendaftaran Non Institusional</h5>
+                        <p>Pelatihan MTU merupakan pelatihan yang diselenggarakan di luar kantor UPT BLK Pasuruan.</p>
+                        <a href="https://uptblkpasuruan.com/pendaftaran-mtu" class="main-button" target="_blank">Lebih
+                            Lanjut</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-01.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">Pendaftaran Short Course</h5>
+                        <p>Pelatihan Short Course dengan jangka pendek berdurasi 1-5 hari secara
+                            online/offline/blended dan tanpa dipungut biaya untuk pencaker.
+                        </p>
+                        <a href="https://uptblkpasuruan.com/pendaftaran" class="main-button" target="_blank">Lebih
+                            Lanjut</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-02.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">Pendaftaran Swadana</h5>
+                        <p>Pelatihan Swadana diselenggarakan berdasarkan permintaan dari pihak
+                            ketiga (perusahaan, sekolah, universitas, instansi lain).
+                        </p>
+                        <a href="https://wa.me/6285806785550?text=Halo%20Admin%20KIOS,%20saya%20ingin%20bertanya%20seputar%20pelatihan%20Swadana%20di%20BLK%20Pasuruan..."
+                            class="main-button" target="_blank">Lebih Lanjut</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-03.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">Computer Based Test</h5>
+                        <p>Computer Based Test merupakan Ujian Berbasis Komputer untuk menyeleksi para calon peserta
+                            pelatihan.</p>
+                        <a href="https://cbt.uptblkpasuruan.com/" class="main-button" target="_blank">Lebih Lanjut</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-02.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">Pengumuman Seleksi</h5>
+                        <p>Setelah Calon Peserta Pelatihan mengikuti Test CBT, dan melakukan test wawancara, siswa akan
+                            dapat melihat hasil seleksi mereka.</p>
+                        <a href="https://uptblkpasuruan.com/hasil-seleksi" class="main-button" target="_blank">Lebih
+                            Lanjut</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-01.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">Katalog Alumni</h5>
+                        <p>Mempromosikan barang/jasa milik alumni di website SIDESI dan akun media sosial BLK, bagi yang
+                            tertarik dalam sektor wirausaha mandiri.</p>
+                        <a href="https://uptblkpasuruan.com/katalog-alumni" class="main-button" target="_blank">Lebih
+                            Lanjut</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-03.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">Bursa Kerja</h5>
+                        <p>Mengakses informasi lowongan kerja dan melamar kerja pada SIDESI bagi alumni pelatihan yang
+                            ingin bekerja di sektor formal.</p>
+                        <a href="https://career.uptblkpasuruan.com" class="main-button" target="_blank">Lebih Lanjut</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-01.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">Data Statistik</h5>
+                        <p>Menampilkan dashboard data statistik terkini UPT BLK Pasuruan, yang meliputi tentang
+                            Anggaran, Pendaftaran dan Penempatan.</p>
+                        <a href="https://data.uptblkpasuruan.com" class="main-button" target="_blank">Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Small End ***** -->
+
+    <!-- ***** Features Small Start ***** -->
+    <section class="section" id="services">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2 style="color: #fff;">Lapor SIDESI</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-01.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">Customer Care</h5>
+                        <p>Layanan bantuan bagi para pengguna aplikasi SIDESI jika mengalami kendala atau kesulitan
+                            dalam penggunaan aplikasi.</p>
+                        <a href="https://wa.me/6285806785550?text=Halo%20Admin%20KIOS,%20saya%20ingin%20bertanya%20seputar%20pelatihan%20di%20BLK%20Pasuruan..."
+                            class="main-button" target="_blank">Klik Disini</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-02.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">Form Pengaduan</h5>
+                        <p>Menampung aspirasi, saran, dan masukan dari stakeholder terkait dengan layanan yang diberikan
+                            oleh UPT BLK Pasuruan.</p>
+                        <a href="https://uptblkpasuruan.com/#pengaduan" class="main-button" target="_blank">Klik
+                            Disini</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-01.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">Whistleblowing System</h5>
+                        <p>Tempat melapor jika menemukan indikasi penyimpangan atau pelanggaran yang terjadi di
+                            lingkungan UPT BLK Pasuruan.
+                        </p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe27c9UJp9D3Vgq5BQwXqxOf90tg64YJleesH5e3UiPte6rdQ/viewform"
+                            class="main-button" target="_blank">Klik Disini</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Small End ***** -->
+
+    <!-- ***** Daftar Kejuruan Start ***** -->
+    <section class="section" id="kejuruan">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Daftar Kejuruan</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- 1. TEKNIK MANUFAKTUR -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1778210333_WhatsApp%20Image%202025-11-25%20at%2009.23.46.jpeg"
+                            class="kejuruan-img" alt="Teknik Manufaktur">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Teknik Manufaktur</h5>
+                            <p class="kejuruan-text">Mempelajari Teknik Membubut, Teknik Mengefrais Dasar K3 yang sesuai
+                                dan Proses Pengerjaan Sesuai dengan Parameter yang di tentukan, serta Mempelajari Teknik
+                                Menggambar Teknik Menggunakan Sistem CAD.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=1" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2. TEKNIK LAS -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1648436192_IMG_4937.jpg"
+                            class="kejuruan-img" alt="Teknik Las">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Teknik Las</h5>
+                            <p class="kejuruan-text">Mempelajari Pengelasan Kombinasi GTAW dan SMAW sampai posisi 3G,
+                                melakukan proses pengelasan Pipe Welder Kombinasi SMAW-FCAW 6G.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=2" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3. TEKNIK OTOMOTIF -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1648435911_otomotif.jpg"
+                            class="kejuruan-img" alt="Teknik Otomotif">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Teknik Otomotif</h5>
+                            <p class="kejuruan-text">Mempelajari melakukan pekerjaan perawatan dan perbaikan kendaraan
+                                ringan konvensional dan injeksi, sepeda motor konvensional dan injeksi.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=3" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4. TEKNIK LISTRIK -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1648436361_IMG_3717.jpg"
+                            class="kejuruan-img" alt="Teknik Listrik">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Teknik Listrik</h5>
+                            <p class="kejuruan-text">Mempelajari instalasi listrik bangunan sederhana, memasang dan
+                                mengoperasikan instalasi otomasi listrik industri, serta sistem instalasi tenaga.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=4" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5. TEKNIK ELEKTRONIKA -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1648436436_elektro.jpg"
+                            class="kejuruan-img" alt="Teknik Elektronika">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Teknik Elektronika</h5>
+                            <p class="kejuruan-text">Mempelajari memperbaiki kerusakan perangkat keras dan perangkat
+                                lunak telepon seluler, menjadi teknisi Audio Video, serta operator instrumen dan
+                                kontrol.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=5" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6. REFRIGATION -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1648436947_post-image-1566457910860.jpg"
+                            class="kejuruan-img" alt="Refrigation">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Refrigation</h5>
+                            <p class="kejuruan-text">Mempelajari penanganan perbaikan perawatan unit AC, serta melakukan
+                                tugas perawatan and perbaikan untuk unit refrigerasi domestik.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=6" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7. BANGUNAN -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1648436540_bangunan.jpg"
+                            class="kejuruan-img" alt="Bangunan">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Bangunan</h5>
+                            <p class="kejuruan-text">Mempelajari pembuatan furniture. Kejuruan ini terdiri atas beberapa
+                                sub kejuruan diantaranya : Furniture dan Konstruksi Kayu.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=7" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8. BISNIS DAN MANAJEMEN -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1648436576_IMG_7615.jpg"
+                            class="kejuruan-img" alt="Bisnis dan Manajemen">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Bisnis dan Manajemen</h5>
+                            <p class="kejuruan-text">Mempelajari pengelolaan berkas perkantoran, bahasa inggris untuk
+                                perkantoran, keuangan perusahaan/kantor serta tugas dan fungsi sekretaris.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=8" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9. TIK -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1778569270_kejuruan%20tik.jpg"
+                            class="kejuruan-img" alt="Teknologi Informasi">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Teknologi Informasi</h5>
+                            <p class="kejuruan-text">Mempelajari pengolahan data yang memanfaatkan teknologi komputer
+                                dan peralatan pendukung lainnya seperti Graphic Design dan Multimedia.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=9" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 10. GARMENT APPAREL -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1648435943_jahit.jpg"
+                            class="kejuruan-img" alt="Garment Apparel">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Garment Apparel</h5>
+                            <p class="kejuruan-text">Mempelajari mengoperasikan Mesin Jahit Pakaian, sepatu, mengerjakan
+                                bordir dengan menggunakan mesin manual maupun high speed.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=10" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 11. TATA BUSANA -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1655556257_IMG_7601.jpg"
+                            class="kejuruan-img" alt="Tata Busana">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Tata Busana</h5>
+                            <p class="kejuruan-text">Mempelajari menggambar desain secara manual dan digital serta dapat
+                                mengaplikasikannya, serta mampu membuat ragam pakaian.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=12" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 12. DESIGN BATIK -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1655556143_Batik.jpg"
+                            class="kejuruan-img" alt="Design Batik">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Design Batik</h5>
+                            <p class="kejuruan-text">Mempelajari membatik yang berupa membuat kain batik tulis, membatik
+                                yang berupa merancangan motif batik tulis.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=18" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 13. TATA KECANTIKAN -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1648436161_tatarias.jpg"
+                            class="kejuruan-img" alt="Tata Kecantikan">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Tata Kecantikan</h5>
+                            <p class="kejuruan-text">Mempelajari merias wajah pengantin, busana dan asesoris pengantin
+                                gaun panjang, memangkas rambut lelaki maupun wanita.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=11" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 14. PROCESSING -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1648436270_roti.jpg"
+                            class="kejuruan-img" alt="Processing">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Processing</h5>
+                            <p class="kejuruan-text">Mempelajari pengemasan produk hasil pertanian, pembuatan roti dan
+                                kue berkualitas tinggi.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=16" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 15. PERTANIAN -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="kejuruan-item">
+                        <img src="https://uptblkpasuruan.com/public/storage/upload/kejuruan/1660358333_hidroponik.png"
+                            class="kejuruan-img" alt="Pertanian">
+                        <div class="kejuruan-content">
+                            <h5 class="kejuruan-title">Pertanian</h5>
+                            <p class="kejuruan-text">Mempelajari pembudidayaan tanaman, pemanfaatan lahan dan
+                                memaksimalkan lahan, serta perpaduan pertanian dan peternakan.</p>
+                            <a href="https://uptblkpasuruan.com/program-pelatihan?kategori_id=14" target="_blank"
+                                class="main-button">Cek Program Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Daftar Kejuruan End ***** -->
+
+    <!-- ***** Info Section Start ***** -->
+    <section class="info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <h5>UPT Balai Latihan Kerja Pasuruan</h5>
+                    <p>Jl. Pahlawan Sunaryo No.96-S, Pateban, Kebon Waris,
+                        Kec. Pandaan, Kab. Pasuruan,<br>
+                        Jawa Timur, 67156</p>
+                    <hr class="dashed">
+                    <p>Jam Pelayanan :<br>
+                        Senin s.d. Kamis : 07.30 s.d. 16.00 WIB<br>
+                        Jumat : 07.00 s.d. 16.30 WIB</p>
+                    <ul class="info-list">
+                        <li><i class="fa fa-phone"></i> Tlp : (0343) 631696</li>
+                        <li><i class="fa fa-fax"></i> Fax : (0343) 630014</li>
+                        <li><i class="fa fa-whatsapp"></i> WA : 085806785550</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <h5>Quick Links</h5>
+                    <ul class="quick-links">
+                        <li><a href="https://disnakertrans.jatimprov.go.id/" target="_blank"><i
+                                    class="fa fa-angle-double-right"></i>
+                                DISNAKERTRANS JATIM</a></li>
+                        <li><a href="https://kemnaker.go.id/" target="_blank"><i class="fa fa-angle-double-right"></i>
+                                KEMENTERIAN
+                                KETENAGAKERJAAN RI</a></li>
+                        <li><a href="https://sukma.jatimprov.go.id/fe/survey?idUser=128" target="_blank"><i
+                                    class="fa fa-angle-double-right"></i> SURVEY KEPUASAN MASYARAKAT</a></li>
+                        <li><a href="https://lpse.jatimprov.go.id/" target="_blank"><i
+                                    class="fa fa-angle-double-right"></i> LPSE
+                                Provinsi JAWA TIMUR</a></li>
+                        <li><a href="https://lapor.go.id/" target="_blank"><i class="fa fa-angle-double-right"></i>
+                                LAYANAN PENGADUAN
+                                (Lapor.Go.Id)</a>
+                        </li>
+                        <li><a href="https://sippn.menpan.go.id/" target="_blank"><i
+                                    class="fa fa-angle-double-right"></i> SIPPN
+                                KemenPANRB</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe27c9UJp9D3Vgq5BQwXqxOf90tg64YJleesH5e3UiPte6rdQ/viewform"
+                                target="_blank"><i class="fa fa-angle-double-right"></i> WHISTLE BLOWING SYSTEM</a></li>
+                        <li><a href="https://career.uptblkpasuruan.com/" target="_blank"><i
+                                    class="fa fa-angle-double-right"></i> BURSA
+                                KERJA</a></li>
+                        <li><a href="https://wa.me/6285806785550?text=Halo%20Admin%20KIOS,%20saya%20ingin%20bertanya%20seputar%20pelatihan%20di%20BLK%20Pasuruan..."
+                                target="_blank"><i class="fa fa-angle-double-right"></i> CUSTOMER
+                                CARE</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <h5>Map UPT BLK Pasuruan</h5>
+                    <div class="map-container">
+                        <iframe
+                            src="https://maps.google.com/maps?q=upt%20blk%20pasuruan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Info Section End ***** -->
+
+    <!-- ***** Footer Start ***** -->
+    <footer class="services-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <p class="copyright">Copyright &copy; 2025 UPT Balai Latihan Kerja Pasuruan</p>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="https://wa.me/+6285806785550"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="mailto:uptblk.pasuruan@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="https://uptblkpasuruan.com"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="https://www.instagram.com/uptblkpasuruan"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/uptblkpasuruan"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/@uptbalailatihankerjapasuru8458"><i
+                                    class="fa fa-youtube"></i></a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6285806785550?text=Halo%20Admin%20KIOS,%20saya%20ingin%20bertanya%20seputar%20pelatihan%20di%20BLK%20Pasuruan..."
+        class="whatsapp-sticky" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+
+</body>
+
+</html>
