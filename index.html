@@ -239,10 +239,244 @@ https://templatemo.com/tm-537-art-factory
             }
         }
 
-        @media (min-width: 1200px) {
-            #promoModal .modal-xl {
-                max-width: 70%;
-            }
+        /* Carousel Service Item Rounded Corners */
+        .service-item {
+            border-radius: 20px !important;
+            overflow: hidden;
+        }
+
+        /* Rencana Pelatihan Section Styling */
+        #rencana-pelatihan {
+            padding: 100px 0;
+            background-color: #f8fafc;
+        }
+
+        .section-heading-custom {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-heading-custom h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1e293b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-heading-custom h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #007bff;
+            border-radius: 2px;
+        }
+
+        .section-heading-custom p {
+            color: #64748b;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .table-responsive-custom {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.04);
+            padding: 24px;
+            overflow-x: auto;
+            border: 1px solid #e2e8f0;
+        }
+
+        .table-responsive-custom::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .table-responsive-custom::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 10px;
+        }
+
+        .table-responsive-custom::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+
+        .table-responsive-custom::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        .table-custom {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Roboto', sans-serif;
+            min-width: 800px;
+        }
+
+        .table-custom th {
+            background-color: #f8fafc;
+            color: #475569;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.75px;
+            padding: 20px 16px;
+            text-align: center;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .table-custom th.text-left {
+            text-align: left;
+        }
+
+        .table-custom td {
+            padding: 16px;
+            vertical-align: middle;
+            font-size: 13px;
+            color: #334155;
+            border-bottom: 1px solid #f1f5f9;
+            text-align: center;
+        }
+
+        .table-custom td.text-left {
+            text-align: left;
+        }
+
+        .table-custom tr.group-header {
+            font-weight: 700;
+        }
+
+        .table-custom tr.group-header td {
+            padding: 16px 24px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.75px;
+            text-align: left;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+        }
+
+        /* Group specific modern gradient styles */
+        .group-apbd-1 {
+            background: linear-gradient(to right, #fffbeb, #fef08a) !important;
+            color: #854d0e !important;
+        }
+
+        .group-mtu {
+            background: linear-gradient(to right, #eef2ff, #c7d2fe) !important;
+            color: #3730a3 !important;
+        }
+
+        .group-apbd-3 {
+            background: linear-gradient(to right, #f1f5f9, #cbd5e1) !important;
+            color: #334155 !important;
+        }
+
+        .group-apbd-4 {
+            background: linear-gradient(to right, #f0f9ff, #bae6fd) !important;
+            color: #0369a1 !important;
+        }
+
+        .group-apbd-5 {
+            background: linear-gradient(to right, #f0fdf4, #a7f3d0) !important;
+            color: #065f46 !important;
+        }
+
+        .table-custom tr.item-row {
+            transition: all 0.2s ease;
+        }
+
+        .table-custom tr.item-row:hover {
+            background-color: #f8fafc;
+            transform: scale(1.002);
+        }
+
+        .kejuruan-badge {
+            font-weight: 600;
+            font-size: 13.5px;
+            color: #0f172a;
+        }
+
+        .badge-paket {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 12px;
+            display: inline-block;
+            box-shadow: 0 2px 4px rgba(3, 105, 161, 0.05);
+        }
+
+        .badge-jp {
+            background-color: #dcfce7;
+            color: #15803d;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 12px;
+            display: inline-block;
+            box-shadow: 0 2px 4px rgba(21, 128, 61, 0.05);
+        }
+
+        .badge-hari {
+            background-color: #ffedd5;
+            color: #c2410c;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 12px;
+            display: inline-block;
+            box-shadow: 0 2px 4px rgba(194, 65, 12, 0.05);
+        }
+
+        .date-range {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .date-badge {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 8px 16px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #334155;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+
+        .date-badge:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+        }
+
+        .date-arrow {
+            color: #94a3b8;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .table-total-row {
+            background-color: #f8fafc;
+            font-weight: 700;
+        }
+
+        .table-total-row td {
+            font-size: 14px;
+            color: #0f172a;
+            border-top: 2px solid #e2e8f0;
+            border-bottom: 2px solid #e2e8f0;
+            padding: 20px 16px;
         }
     </style>
 
@@ -277,6 +511,7 @@ https://templatemo.com/tm-537-art-factory
                             <li class="scroll-to-section"><a href="#services">Layanan</a></li>
                             <li class="scroll-to-section"><a href="#kejuruan">Kejuruan</a></li>
                             <li class="scroll-to-section"><a href="#lapor">Siap Lapor</a></li>
+                            <li class="scroll-to-section"><a href="#jadwal">Jadwal</a></li>
                             <li class="scroll-to-section"><a target="_blank" href="https://uptblkpasuruan.com">Web UPT
                                     BLK Pasuruan</a>
                             </li>
@@ -758,6 +993,304 @@ https://templatemo.com/tm-537-art-factory
         </div>
     </section>
     <!-- ***** Features Small End ***** -->
+
+    <!-- ***** Rencana Pelatihan Section Start ***** -->
+    <section class="section" id="jadwal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading-custom">
+                        <p>&nbsp;</p>
+                        <h2>Jadwal Pelatihan Program APBD 2026</h2>
+                        <p>Daftar lengkap program pelatihan yang direncanakan diselenggarakan di UPT BLK Pasuruan pada
+                            tahun 2026</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-responsive-custom">
+                        <table class="table-custom">
+                            <thead>
+                                <tr>
+                                    <th style="width: 60px;">No</th>
+                                    <th class="text-left">Program Pelatihan</th>
+                                    <th style="width: 140px;">Jml Paket</th>
+                                    <th style="width: 120px;">Jml JP</th>
+                                    <th style="width: 120px;">Jml Hari</th>
+                                    <th style="width: 320px;">Tanggal Pelaksanaan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Group I: APBD -->
+                                <tr class="group-header group-apbd-1">
+                                    <td colspan="6">I. APBD</td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>1</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Pelayanan Pelanggan</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">180 JP</span></td>
+                                    <td><span class="badge-hari">23 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">23 Jan 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">26 Feb 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>2</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Practical Office</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">240 JP</span></td>
+                                    <td><span class="badge-hari">30 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">22 Jan 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">06 Mar 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>3</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Pengoperasian Mesin Produksi</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">260 JP</span></td>
+                                    <td><span class="badge-hari">33 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">21 Jan 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">10 Mar 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Group II: MTU -->
+                                <tr class="group-header group-mtu">
+                                    <td colspan="6">II. MTU</td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>1</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan English For Front Liner</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">180 JP</span></td>
+                                    <td><span class="badge-hari">23 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">01 Apr 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">04 Mei 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>2</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Pemeliharaan Kendaraan Ringan Sistem
+                                        Injeksi</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">300 JP</span></td>
+                                    <td><span class="badge-hari">38 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">07 Apr 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">08 Jun 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Group III: APBD -->
+                                <tr class="group-header group-apbd-3">
+                                    <td colspan="6">III. APBD</td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>1</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Pengelola Administrasi Perkantoran
+                                    </td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">260 JP</span></td>
+                                    <td><span class="badge-hari">33 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">05 Mei 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">26 Jun 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>2</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Desain Grafis Muda</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">260 JP</span></td>
+                                    <td><span class="badge-hari">33 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">14 Apr 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">05 Jun 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>3</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Pemasangan Instalasi Otomasi Listrik
+                                        Industri</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">340 JP</span></td>
+                                    <td><span class="badge-hari">43 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">13 Apr 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">19 Jun 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>4</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Plate Welder FCAW 3G-UP/PF</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">340 JP</span></td>
+                                    <td><span class="badge-hari">43 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">10 Apr 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">18 Jun 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Group IV: APBD -->
+                                <tr class="group-header group-apbd-4">
+                                    <td colspan="6">IV. APBD</td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>1</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Teknisi AC Residential (Kualifikasi
+                                        3)</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">260 JP</span></td>
+                                    <td><span class="badge-hari">33 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">05 Jun 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">22 Jul 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>2</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Plate Welder SMAW 3G-UP/PF</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">340 JP</span></td>
+                                    <td><span class="badge-hari">43 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">19 Jun 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">19 Aug 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Group V: APBD -->
+                                <tr class="group-header group-apbd-5">
+                                    <td colspan="6">V. APBD</td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>1</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Video Editor</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">240 JP</span></td>
+                                    <td><span class="badge-hari">30 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">22 Jul 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">03 Sep 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>2</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Teknisi Embedded System
+                                        Microcontroller</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">260 JP</span></td>
+                                    <td><span class="badge-hari">33 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">22 Jul 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">08 Sep 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>3</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Menjahit Pakaian Wanita Dewasa</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">260 JP</span></td>
+                                    <td><span class="badge-hari">33 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">22 Jul 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">08 Sep 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>4</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Operator Forklift</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">280 JP</span></td>
+                                    <td><span class="badge-hari">35 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">22 Jul 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">10 Sep 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item-row">
+                                    <td>5</td>
+                                    <td class="text-left kejuruan-badge">Pelatihan Pemasangan Instalasi Kontrol Industri
+                                        berbasis PLC</td>
+                                    <td><span class="badge-paket">1 Paket</span></td>
+                                    <td><span class="badge-jp">340 JP</span></td>
+                                    <td><span class="badge-hari">43 Hari</span></td>
+                                    <td>
+                                        <div class="date-range">
+                                            <span class="date-badge">22 Jul 2026</span>
+                                            <span class="date-arrow">&rarr;</span>
+                                            <span class="date-badge">22 Sep 2026</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Total Row -->
+                                <tr class="table-total-row">
+                                    <td colspan="2" class="text-center">TOTAL</td>
+                                    <td colspan="2" class="text-left">16 Paket Pelatihan</td>
+                                    <td colspan="2"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Rencana Pelatihan Section End ***** -->
 
     <!-- ***** Info Section Start ***** -->
     <section class="info-section">
