@@ -106,7 +106,7 @@ Pastikan Anda telah menginstal salah satu Web Server lokal berikut:
 
 ## 📄 Lisensi
 
-Proyek ini berada di bawah lisensi **MIT License** - lihat berkas [LICENSE](LICENSE) untuk detail lebih lanjut.
+Proyek ini berada di bawah lisensi **Proprietary License** - lihat berkas [LICENSE](LICENSE) untuk detail lebih lanjut.
 
 ---
 
