@@ -521,6 +521,620 @@ https://templatemo.com/tm-537-art-factory
             border-bottom: 2px solid #e2e8f0;
             padding: 20px 16px;
         }
+
+        /* ==========================================================================
+           Jala Alumni Section Styling (Premium Blue Theme, Restored Hero & Strip)
+           ========================================================================== */
+        #jala-alumni {
+            padding: 0;
+        }
+
+        /* Hero Stats */
+        .ja-hero {
+            background: #ffffff;
+            padding: 120px 0;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .ja-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 85, 165, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .ja-badge-label {
+            display: inline-block;
+            background: #f1f5f9;
+            color: #0055a5;
+            border: 1px solid #cbd5e1;
+            padding: 8px 22px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+
+        .ja-hero-text h2 {
+            color: #1e293b;
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 20px;
+        }
+
+        .ja-hero-text h2 span {
+            color: #0055a5;
+        }
+
+        .ja-hero-text p {
+            color: #475569;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .ja-stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .ja-stat-card {
+            background: linear-gradient(135deg, #0055a5 0%, #0088e8 50%, #00b4c6 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 36px 24px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 85, 165, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .ja-stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(0, 85, 165, 0.25);
+        }
+
+        .ja-stat-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .ja-stat-number {
+            color: #fff;
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .ja-stat-label {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 14px;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        /* Company Strip */
+        .ja-company-strip {
+            background: #ffffff;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 50px 0;
+        }
+
+        .ja-strip-label {
+            text-align: center;
+            color: #0055a5;
+            font-size: 48px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 36px;
+            line-height: 1.15;
+        }
+
+        /* Company Strip Carousel */
+        .ja-company-carousel-wrap {
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        .ja-company-badge {
+            background: #ffffff;
+            border: 1.5px solid #bae6fd;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #0055a5;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(0, 136, 232, 0.08);
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .ja-company-badge:hover {
+            border-color: #0055a5;
+            color: #ffffff;
+            background: #0055a5;
+            box-shadow: 0 6px 16px rgba(0, 85, 165, 0.25);
+            transform: translateY(-2px);
+        }
+
+        /* Company carousel navigation */
+        .ja-company-carousel .owl-stage-outer {
+            overflow: hidden !important;
+            padding: 10px 0;
+        }
+
+        /* Clip at strip boundary instead of owl-stage-outer */
+        .ja-company-strip {
+            overflow: hidden;
+        }
+
+        .ja-company-carousel .owl-nav {
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .ja-company-carousel .owl-nav button {
+            background: #0055a5 !important;
+            color: #fff !important;
+            width: 40px;
+            height: 40px;
+            border-radius: 50% !important;
+            font-size: 18px !important;
+            margin: 0 6px;
+            transition: all 0.2s ease;
+        }
+
+        .ja-company-carousel .owl-nav button:hover {
+            background: #0088e8 !important;
+            transform: scale(1.1);
+        }
+
+        .ja-company-carousel .owl-dots {
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        .ja-company-carousel .owl-dot span {
+            background: #bae6fd !important;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 3px;
+            transition: all 0.2s ease;
+        }
+
+        .ja-company-carousel .owl-dot.active span {
+            background: #0055a5 !important;
+            transform: scale(1.3);
+        }
+
+        /* Slide: natural wrapping container (no rigid columns) */
+        .ja-company-slide {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 8px;
+        }
+
+        /* Alumni Section Custom Styles */
+        .ja-alumni-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #0055a5 0%, #0088e8 100%);
+        }
+
+        .ja-alumni-section .section-heading {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .ja-alumni-section .section-heading h2 {
+            font-size: 48px;
+            font-weight: 800;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .ja-alumni-section .section-heading h2 em {
+            color: #fde68a;
+            font-style: normal;
+        }
+
+        .ja-alumni-section .section-heading p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Tabs Styling */
+        .ja-tabs-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .ja-tab-btn {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 12px 28px;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .ja-tab-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .ja-tab-btn.active {
+            background: #ffffff;
+            color: #0055a5;
+            border-color: #ffffff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Stats Dashboard */
+        .ja-stats-dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 45px;
+        }
+
+        .ja-stat-item {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            padding: 22px 18px;
+            text-align: center;
+            backdrop-filter: blur(8px);
+            transition: all 0.3s ease;
+            color: #ffffff;
+        }
+
+        .ja-stat-item:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.25);
+            transform: translateY(-3px);
+        }
+
+        .ja-stat-circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid #fde68a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px auto;
+        }
+
+        .ja-stat-number {
+            font-size: 18px;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .ja-stat-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ja-stat-label {
+            font-size: 12.5px;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 700;
+            line-height: 1.3;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .ja-stat-count {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 500;
+        }
+
+        .ja-large-container {
+            max-width: 1400px;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        /* Filter Panel */
+        .ja-filter-wrapper {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(5px);
+        }
+
+        .ja-search-box {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .ja-search-box i {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+            font-size: 16px;
+        }
+
+        .ja-search-box input {
+            width: 100%;
+            padding: 14px 20px 14px 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            font-size: 14.5px;
+            color: #1e293b;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .ja-search-box input:focus {
+            background: #ffffff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-color: #fde68a;
+        }
+
+        /* Card Styling */
+        .ja-alumni-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 18px;
+            padding: 18px 20px;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 165px;
+            height: auto;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .ja-alumni-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.18);
+            border-color: #0088e8;
+        }
+
+        .ja-card-top {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .ja-avatar {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 800;
+            color: #ffffff;
+            flex-shrink: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 2px;
+        }
+
+        .ja-card-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1e293b;
+            line-height: 1.3;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .ja-card-position {
+            display: inline-block;
+            font-size: 12px;
+            color: #1e293b;
+            font-weight: 700;
+            margin-top: 3px;
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        .ja-pos-karyawan {
+            background: #e0f2fe;
+            color: #0369a1;
+        }
+
+        .ja-pos-wirausaha {
+            background: #fef3c7;
+            color: #b45309;
+        }
+
+        .ja-pos-asn {
+            background: #dcfce7;
+            color: #15803d;
+        }
+
+        .ja-card-middle {
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+
+        .ja-card-company {
+            font-size: 13px;
+            color: #0055a5;
+            font-weight: 600;
+            padding: 7px 12px;
+            background: #f0f7ff;
+            border: 1px solid #bae6fd;
+            border-radius: 8px;
+            display: block;
+            line-height: 1.35;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            white-space: normal;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .ja-card-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid #f1f5f9;
+            padding-top: 8px;
+            margin-top: 4px;
+        }
+
+        .ja-card-training {
+            font-size: 12px;
+            color: #64748b;
+            font-weight: 600;
+            background: #f1f5f9;
+            border-radius: 6px;
+            padding: 4px 8px;
+            max-width: 100%;
+            white-space: normal;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.3;
+            box-sizing: border-box;
+        }
+
+        /* Carousel Navigation & Slide Layout */
+        .ja-alumni-section .owl-carousel {
+            position: relative;
+            padding: 0 45px;
+        }
+
+        .ja-alumni-section .owl-nav {
+            display: block !important;
+        }
+
+        .ja-alumni-section .owl-nav button.owl-prev,
+        .ja-alumni-section .owl-nav button.owl-next {
+            background-color: rgba(255, 255, 255, 0.15) !important;
+            color: #ffffff !important;
+            border: 1px solid rgba(255, 255, 255, 0.25) !important;
+            border-radius: 50% !important;
+            font-size: 24px !important;
+            width: 50px !important;
+            height: 50px !important;
+            line-height: 48px !important;
+            text-align: center !important;
+            display: inline-block !important;
+            position: absolute !important;
+            top: 50% !important;
+            transform: translateY(-50%) !important;
+            transition: all 0.3s ease !important;
+            outline: none !important;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .ja-alumni-section .owl-nav button.owl-prev {
+            left: -15px !important;
+        }
+
+        .ja-alumni-section .owl-nav button.owl-next {
+            right: -15px !important;
+        }
+
+        .ja-alumni-section .owl-nav button.owl-prev:hover,
+        .ja-alumni-section .owl-nav button.owl-next:hover {
+            background-color: #fde68a !important;
+            color: #1e293b !important;
+            border-color: #fde68a !important;
+            box-shadow: 0 6px 16px rgba(253, 230, 138, 0.35) !important;
+        }
+
+        /* Empty state styling */
+        .ja-empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #ffffff;
+            width: 100%;
+        }
+
+        .ja-empty-state i {
+            font-size: 40px;
+            color: #fde68a;
+            margin-bottom: 12px;
+        }
+
+        .ja-empty-state p {
+            font-size: 15px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Responsive Layouts */
+        @media (max-width: 1024px) {
+            .ja-stats-dashboard {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .ja-stats-dashboard {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .ja-tabs-container {
+                flex-direction: column;
+                gap: 10px;
+                padding: 0 20px;
+            }
+
+            .ja-tab-btn {
+                width: 100%;
+            }
+
+            .ja-filter-wrapper {
+                padding: 15px;
+            }
+        }
     </style>
 
 </head>
@@ -552,11 +1166,12 @@ https://templatemo.com/tm-537-art-factory
                             <li class="scroll-to-section"><a href="#welcome" class="active">Beranda</a></li>
                             <li class="scroll-to-section"><a href="#about">Tentang SIDESI</a></li>
                             <li class="scroll-to-section"><a href="#services">Layanan</a></li>
+                            <li class="scroll-to-section"><a href="#jala-alumni">Jala Alumni</a></li>
                             <li class="scroll-to-section"><a href="#kejuruan">Kejuruan</a></li>
                             <li class="scroll-to-section"><a href="#lapor">Siap Lapor</a></li>
                             <li class="scroll-to-section"><a href="#jadwal">Jadwal</a></li>
-                            <li class="scroll-to-section"><a target="_blank" href="https://uptblkpasuruan.com">Web UPT
-                                    BLK Pasuruan</a>
+                            <li class="scroll-to-section"><a target="_blank" href="https://uptblkpasuruan.com">Web
+                                    BLK</a>
                             </li>
                         </ul>
                         <a class='menu-trigger'>
@@ -759,6 +1374,127 @@ https://templatemo.com/tm-537-art-factory
         </div>
     </section>
     <!-- ***** Features Small End ***** -->
+
+    <!-- ***** Jala Alumni Start ***** -->
+    <section class="section" id="jala-alumni">
+        <!-- ***** Hero Stats Start ***** -->
+        <div class="ja-hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12"
+                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <div class="ja-hero-text">
+                            <span class="ja-badge-label">data penempatan alumni 2025</span>
+                            <h2>Tracer Study & <br>Peta Penempatan <span>Alumni</span></h2>
+                            <p>UPT BLK Pasuruan berkomitmen untuk terus memantau dan mendukung perkembangan karir alumni
+                                demi terciptanya sinergi dengan kebutuhan industri kerja masa kini.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.3s">
+                        <div class="ja-stats-grid">
+                            <div class="ja-stat-card">
+                                <div class="ja-stat-icon">👥</div>
+                                <div class="ja-stat-number">834</div>
+                                <div class="ja-stat-label">Alumni Terlatih</div>
+                            </div>
+                            <div class="ja-stat-card">
+                                <div class="ja-stat-icon">🏢</div>
+                                <div class="ja-stat-number">479</div>
+                                <div class="ja-stat-label">Perusahaan Mitra</div>
+                            </div>
+                            <div class="ja-stat-card">
+                                <div class="ja-stat-icon">📊</div>
+                                <div class="ja-stat-number">69.9%</div>
+                                <div class="ja-stat-label">Terserap Kerja</div>
+                            </div>
+                            <div class="ja-stat-card">
+                                <div class="ja-stat-icon">📍</div>
+                                <div class="ja-stat-number">10+</div>
+                                <div class="ja-stat-label">Kota Penempatan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Hero Stats End ***** -->
+
+        <!-- ***** Company Strip Start ***** -->
+        <div class="ja-company-strip">
+            <div class="container">
+                <div class="ja-strip-label">DAFTAR PERUSAHAAN ALUMNI BEKERJA</div>
+                <!-- Company carousel: 4 rows per slide, built dynamically by JS -->
+                <div class="ja-company-carousel" id="company-carousel">
+                    <!-- Slides will be injected by initCompanyStrip() -->
+                </div>
+            </div>
+        </div>
+        <!-- ***** Company Strip End ***** -->
+
+        <!-- DYNAMIC ALUMNI SECTION -->
+        <div class="ja-alumni-section" id="jala-alumni-content">
+            <div class="ja-large-container">
+                <div class="section-heading">
+                    <h2 style="color: #fff; text-transform: uppercase; font-weight: bold;">JALA ALUMNI</h2>
+                    <p>Mereka telah membuktikan bahwa pelatihan di UPT BLK Pasuruan membuka peluang karir nyata.</p>
+                </div>
+
+                <!-- CATEGORY TABS -->
+                <div class="ja-tabs-container">
+                    <button class="ja-tab-btn active" data-category="APBD" onclick="changeCategory('APBD')">Alumni
+                        Pelatihan APBD</button>
+                    <button class="ja-tab-btn" data-category="MTU" onclick="changeCategory('MTU')">Alumni Pelatihan
+                        MTU</button>
+                </div>
+
+                <!-- STATISTICS DASHBOARD -->
+                <div class="ja-stats-dashboard">
+                    <div class="ja-stat-item">
+                        <div class="ja-stat-circle">
+                            <span class="ja-stat-number" id="stat-placement">69.9%</span>
+                        </div>
+                        <div class="ja-stat-info">
+                            <span class="ja-stat-label">Total Penempatan Kerja</span>
+                            <span class="ja-stat-count" id="stat-count">583 dari 834 Alumni</span>
+                        </div>
+                    </div>
+                    <div class="ja-stat-item">
+                        <div class="ja-stat-circle">
+                            <span class="ja-stat-number" id="stat-apbd">72.5%</span>
+                        </div>
+                        <div class="ja-stat-info">
+                            <span class="ja-stat-label">Penempatan Alumni APBD</span>
+                            <span class="ja-stat-count" id="stat-apbd-count">487 dari 672 Alumni</span>
+                        </div>
+                    </div>
+                    <div class="ja-stat-item">
+                        <div class="ja-stat-circle">
+                            <span class="ja-stat-number" id="stat-mtu">59.3%</span>
+                        </div>
+                        <div class="ja-stat-info">
+                            <span class="ja-stat-label">Penempatan Alumni MTU</span>
+                            <span class="ja-stat-count" id="stat-mtu-count">96 dari 162 Alumni</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEARCH & FILTER BAR -->
+                <div class="ja-filter-wrapper">
+                    <div class="ja-search-box">
+                        <i class="fa fa-search"></i>
+                        <input type="text" id="alumni-search-input" onkeyup="handleSearch()"
+                            placeholder="Cari alumni berdasarkan nama, kejuruan, atau tempat kerja...">
+                    </div>
+                </div>
+
+                <!-- ALUMNI CAROUSEL -->
+                <div class="owl-carousel owl-theme" id="alumni-carousel">
+                    <!-- Cards will be dynamically inserted here by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Jala Alumni End ***** -->
 
     <!-- ***** Daftar Kejuruan Start ***** -->
     <section class="section" id="kejuruan">
@@ -1534,12 +2270,275 @@ https://templatemo.com/tm-537-art-factory
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
 
+    <!-- Alumni Placement Data -->
+    <script src="assets/js/alumni_data.js"></script>
+
     <script>
+        // Alumni Data stats configuration
+        const ALUMNI_STATS = {
+            total: 834,
+            placed: 583,
+            APBD: {
+                total: 672,
+                placed: 487
+            },
+            MTU: {
+                total: 162,
+                placed: 96
+            }
+        };
+
+        let currentCategory = 'APBD';
+        let searchQuery = '';
+        let filteredAlumni = [];
+
+        function initAlumniGrid() {
+            // Calculate rates
+            const totalRate = (ALUMNI_STATS.placed / ALUMNI_STATS.total * 100).toFixed(1) + '%';
+            const apbdRate = (ALUMNI_STATS.APBD.placed / ALUMNI_STATS.APBD.total * 100).toFixed(1) + '%';
+            const mtuRate = (ALUMNI_STATS.MTU.placed / ALUMNI_STATS.MTU.total * 100).toFixed(1) + '%';
+
+            // Set Total Placement
+            document.getElementById('stat-placement').innerText = totalRate;
+            document.getElementById('stat-count').innerText = `${ALUMNI_STATS.placed} dari ${ALUMNI_STATS.total} Alumni`;
+
+            // Set APBD Placement
+            document.getElementById('stat-apbd').innerText = apbdRate;
+            document.getElementById('stat-apbd-count').innerText = `${ALUMNI_STATS.APBD.placed} dari ${ALUMNI_STATS.APBD.total} Alumni`;
+
+            // Set MTU Placement
+            document.getElementById('stat-mtu').innerText = mtuRate;
+            document.getElementById('stat-mtu-count').innerText = `${ALUMNI_STATS.MTU.placed} dari ${ALUMNI_STATS.MTU.total} Alumni`;
+
+            // Filter data
+            filterAlumniData();
+        }
+
+        function filterAlumniData() {
+            // Filter by category (APBD / MTU)
+            let data = ALUMNI_DATA.filter(item => item.category === currentCategory);
+
+            // Filter to only include PT companies or Japanese language alumni
+            data = data.filter(item => {
+                const comp = item.company.toUpperCase();
+                const train = item.training.toUpperCase();
+                return comp.startsWith('PT') || comp.includes(' PT') || comp.includes('PT.') || train.includes('JEPANG');
+            });
+
+            // Filter by search query
+            if (searchQuery.trim() !== '') {
+                const query = searchQuery.toLowerCase().trim();
+                data = data.filter(item =>
+                    item.name.toLowerCase().includes(query) ||
+                    item.training.toLowerCase().includes(query) ||
+                    item.company.toLowerCase().includes(query)
+                );
+            }
+
+            filteredAlumni = data;
+            renderAlumniGrid();
+        }
+
+        // Generate avatar gradient based on initials
+        function getAvatarStyle(name) {
+            const initial = name.charAt(0).toUpperCase();
+            const charCode = initial.charCodeAt(0);
+            let gradient = 'linear-gradient(135deg, #0055a5, #00b4c6)'; // default theme gradient
+
+            if (charCode % 3 === 0) {
+                gradient = 'linear-gradient(135deg, #4f46e5, #7c3aed)'; // purple/indigo
+            } else if (charCode % 3 === 1) {
+                gradient = 'linear-gradient(135deg, #06b6d4, #3b82f6)'; // cyan/blue
+            } else if (charCode % 3 === 2) {
+                gradient = 'linear-gradient(135deg, #10b981, #059669)'; // green/emerald
+            }
+            return { initial, gradient };
+        }
+
+        function renderAlumniGrid() {
+            const $carousel = $('#alumni-carousel');
+
+            // Destroy existing carousel instance if initialized
+            if ($carousel.hasClass('owl-loaded')) {
+                $carousel.trigger('destroy.owl.carousel');
+                $carousel.removeClass('owl-loaded owl-drag');
+                $carousel.find('.owl-stage-outer').children().unwrap();
+            }
+            $carousel.empty();
+
+            if (filteredAlumni.length === 0) {
+                $carousel.html(`
+                    <div class="ja-empty-state" style="width: 100%; text-align: center; padding: 40px 0;">
+                        <i class="fa fa-info-circle" style="font-size: 40px; color: #fde68a; margin-bottom: 12px; display: block;"></i>
+                        <p style="color: #ffffff; font-size: 15px; font-weight: 600;">Tidak ada data alumni yang cocok dengan pencarian saat ini.</p>
+                    </div>
+                `);
+                return;
+            }
+
+            // Group into columns of 3 items (3 rows)
+            const groupedAlumni = [];
+            for (let i = 0; i < filteredAlumni.length; i += 3) {
+                groupedAlumni.push(filteredAlumni.slice(i, i + 3));
+            }
+
+            groupedAlumni.forEach(group => {
+                let cardsHtml = '';
+                group.forEach(item => {
+                    const { initial, gradient } = getAvatarStyle(item.name);
+                    const companyPrefix = '🏢 ';
+
+                    let subcatIcon = '💼';
+                    let subcatClass = 'ja-pos-karyawan';
+                    if (item.subcategory === 'Wirausaha') {
+                        subcatIcon = '🚀';
+                        subcatClass = 'ja-pos-wirausaha';
+                    } else if (item.subcategory === 'ASN') {
+                        subcatIcon = '🏛️';
+                        subcatClass = 'ja-pos-asn';
+                    }
+
+                    cardsHtml += `
+                        <div class="ja-alumni-card">
+                            <div>
+                                <div class="ja-card-top">
+                                    <div class="ja-avatar" style="background: ${gradient}">${initial}</div>
+                                    <div>
+                                        <div class="ja-card-name">${item.name}</div>
+                                        <span class="ja-card-position ${subcatClass}">${subcatIcon} ${item.subcategory}</span>
+                                    </div>
+                                </div>
+                                <div class="ja-card-middle">
+                                    <div class="ja-card-company">${companyPrefix}${item.company}</div>
+                                </div>
+                            </div>
+                            <div class="ja-card-bottom">
+                                <span class="ja-card-training">${item.training}</span>
+                            </div>
+                        </div>
+                        <div style="height: 16px;"></div>
+                    `;
+                });
+
+                const slide = `
+                    <div class="item" style="padding: 10px 5px 5px 5px;">
+                        ${cardsHtml}
+                    </div>
+                `;
+                $carousel.append(slide);
+            });
+
+            // Re-initialize Owl Carousel
+            $carousel.owlCarousel({
+                loop: groupedAlumni.length > 3,
+                margin: 24,
+                nav: true,
+                dots: false,
+                navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                }
+            });
+        }
+
+        function changeCategory(cat) {
+            currentCategory = cat;
+
+            // Toggle active class on tab buttons
+            const tabBtns = document.querySelectorAll('.ja-tab-btn');
+            tabBtns.forEach(btn => {
+                if (btn.getAttribute('data-category') === cat) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // Re-filter and render
+            filterAlumniData();
+        }
+
+        function handleSearch() {
+            const input = document.getElementById('alumni-search-input');
+            searchQuery = input.value;
+            filterAlumniData();
+        }
+
+        function initCompanyStrip() {
+            if (typeof ALUMNI_DATA === 'undefined') return;
+            const allowedCompanies = new Set();
+            ALUMNI_DATA.forEach(item => {
+                const comp = item.company.trim();
+                const compUpper = comp.toUpperCase();
+                const trainUpper = item.training.toUpperCase();
+                if (compUpper.startsWith('PT') || compUpper.includes(' PT') || compUpper.includes('PT.') || trainUpper.includes('JEPANG')) {
+                    if (comp) allowedCompanies.add(comp);
+                }
+            });
+
+            const companyList = Array.from(allowedCompanies).sort((a, b) => a.localeCompare(b));
+
+            // Approx 4 rows × ~6 avg badges per row = 24 per slide
+            // Using natural flex-wrap so no fixed columns — badges distribute by available width
+            const ITEMS_PER_SLIDE = 24;
+
+            const $carousel = $('#company-carousel');
+
+            // Destroy any stale instance
+            if ($carousel.hasClass('owl-loaded')) {
+                $carousel.trigger('destroy.owl.carousel');
+                $carousel.removeClass('owl-loaded owl-drag');
+                $carousel.find('.owl-stage-outer').children().unwrap();
+            }
+            $carousel.empty();
+            $carousel.removeClass('owl-carousel owl-theme');
+
+            // Build slides — each slide is a natural-wrapping flex container
+            for (let i = 0; i < companyList.length; i += ITEMS_PER_SLIDE) {
+                const slideItems = companyList.slice(i, i + ITEMS_PER_SLIDE);
+                const badgesHtml = slideItems
+                    .map(c => `<span class="ja-company-badge">${c}</span>`)
+                    .join('');
+                $carousel.append(`<div class="item"><div class="ja-company-slide">${badgesHtml}</div></div>`);
+            }
+
+            // Add owl classes after items exist so custom.js doesn't init it empty
+            $carousel.addClass('owl-carousel owl-theme');
+
+            // Initialize Owl Carousel
+            $carousel.owlCarousel({
+                loop: companyList.length > ITEMS_PER_SLIDE,
+                items: 1,
+                margin: 0,
+                nav: true,
+                dots: true,
+                navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 1 },
+                    1024: { items: 1 }
+                }
+            });
+        }
+
         $(document).ready(function () {
             // Show modal on load
             $('#promoModal').modal('show');
+
+            // Initialize Alumni Grid
+            if (typeof ALUMNI_DATA !== 'undefined') {
+                initAlumniGrid();
+                initCompanyStrip();
+            }
         });
     </script>
+
+
 
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/6285806785550?text=Halo%20Admin%20KIOS,%20saya%20ingin%20bertanya%20seputar%20pelatihan%20di%20BLK%20Pasuruan..."

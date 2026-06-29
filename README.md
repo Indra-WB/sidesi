@@ -35,6 +35,12 @@ Tampilan dan fungsionalitas SIDESI telah ditingkatkan secara menyeluruh dengan f
 * Tombol sticky WhatsApp di pojok kanan bawah yang terintegrasi langsung dengan admin KIOS Pelayanan.
 * Dilengkapi dengan animasi getar pulsa (*pulse animation*) untuk memikat perhatian pengguna tanpa mengganggu navigasi.
 
+### 6. 🎓 Fitur Jala Alumni (Tracer Study & Penempatan)
+* **Peta Penempatan & Tracer Study**: Sistem pemantauan karir alumni angkatan 2025.
+* **Dashboard Statistik Interaktif**: Menampilkan rasio dan data riil penempatan alumni program APBD dan MTU.
+* **Filter & Pencarian Alumni**: Mempermudah pencarian nama alumni, kejuruan, atau tempat bekerja secara real-time.
+* **Company Strip Slider**: Marquee nama-nama perusahaan mitra tempat alumni UPT BLK Pasuruan diserap bekerja.
+
 ---
 
 ## 🛠️ Teknologi yang Digunakan
