@@ -21,7 +21,7 @@ Tampilan dan fungsionalitas SIDESI telah ditingkatkan secara menyeluruh dengan f
 * **Interactive Responsive Table**: Tabel rencana pelatihan dengan arsitektur CSS kustom yang modern, diletak persis di atas footer.
 * **Modern Badges**: Pembeda visual untuk durasi jam pelajaran (badge hijau `JP`), durasi hari (badge oranye `Hari`), dan paket pelatihan (badge biru `Paket`).
 * **Clean Date Format**: Penulisan tanggal disederhanakan dengan hanya menampilkan **Bulan Lengkap dan Tahun** tanpa tanggal harian (misalnya: *Januari 2026 ➔ Februari 2026*).
-* **Gradient Group Headers**: Pengelompokan baris yang indah dengan gradien modern untuk kategori pelatihan (APBD Angkatan I - V dan MTU).
+* **Gradient Group Headers**: Pengelompokan baris yang indah dengan gradien modern untuk kategori pelatihan (APBD Angkatan I - V, MTU, dan Short Course).
 
 ### 3. 🖼️ Popout Modal Maklumat Pelayanan
 * Popout otomatis (on-load modal) berukuran ekstra besar (`modal-xl` dengan lebar optimal 80%).
